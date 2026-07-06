@@ -145,7 +145,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">手機號碼 *</label>
-                            <input type="tel" name="phone" required placeholder="09xxxxxxxx" pattern="^09[0-9]{8}$" title="請輸入正確的台灣手機格式，共10碼" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500">
+                            <input type="tel" name="phone" required placeholder="09xxxxxxxx" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500">
                         </div>
                     </div>
 
@@ -156,7 +156,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">身分證字號 *</label>
-                            <input type="text" name="id_card" required placeholder="第一個字母大寫共10碼" pattern="^[A-Z][12]\d{8}$" title="請輸入正確的中華民國身分證字號格式，例如 A123456789" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 uppercase">
+                            <input type="text" name="id_card" required placeholder="請輸入身分證字號" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 uppercase">
                         </div>
                     </div>
 
@@ -173,10 +173,10 @@
                             <label class="block text-sm font-semibold text-gray-700 mb-2">貸款金額需求 (萬) *</label>
                             <select name="amount" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 bg-white">
                                 <option value="">請選擇</option>
-                                <option value="10萬">10萬</option>
-                                <option value="30萬">30萬</option>
-                                <option value="50萬">50萬</option>
-                                <option value="100萬以上">100萬以上</option>
+                                <option value="10萬 – 20萬">10萬 – 20萬</option>
+                                <option value="20萬 – 30萬">20萬 – 30萬</option>
+                                <option value="30萬 – 50萬">30萬 – 50萬</option>
+                                <option value="50萬以上">50萬以上</option>
                             </select>
                         </div>
                         <div>
@@ -266,10 +266,18 @@
         let ENTERPRISE_LINE_URL = 'https://line.me/ti/p/@987apocu';
         let ENTERPRISE_LINE_ID = '@987apocu';
 
+        function normalizeLineUrl(lineUrl, lineId) {
+            const url = String(lineUrl || '').trim();
+            const id = String(lineId || '').trim();
+            if (/^https?:\/\//i.test(url)) return url;
+            if (id.startsWith('@')) return 'https://line.me/ti/p/' + id;
+            return ENTERPRISE_LINE_URL;
+        }
+
         function applyCPageConfig(config) {
             config = config || {};
-            ENTERPRISE_LINE_URL = config.line_url || ENTERPRISE_LINE_URL;
             ENTERPRISE_LINE_ID = config.line_id || ENTERPRISE_LINE_ID;
+            ENTERPRISE_LINE_URL = normalizeLineUrl(config.line_url, ENTERPRISE_LINE_ID);
             const companyName = config.company_name || '';
             if (!companyName) return;
             const oldNames = ['鴻賜資產管理有限公司', '鴻賜資產管理'];
