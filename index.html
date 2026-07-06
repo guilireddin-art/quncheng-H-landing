@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鴻賜資產管理 | 低利率貸款 快速審核 | 借30萬每天還款超輕鬆</title>
+    <script>document.documentElement.classList.add('c-config-loading');</script>
+    <style>.c-config-loading body{visibility:hidden}</style>
+    <script src="page-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://picsum.photos/id/1015/2000/1200') center/cover; }
+        .card-hover { transition: all 0.3s; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .radio-btn input { display: none; }
+        .radio-btn.active { border-color: #2563eb; background-color: #eff6ff; color: #1d4ed8; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- ========================================== -->
+    <!-- 1. Meta / Facebook Pixel 像素代碼預留位置 -->
+    <!-- ========================================== -->
+    <script>
+      // FB Pixel 由 C 項目 page-config.js 依照後台 Page 設定自動載入。
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-24">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center bg-white/20 backdrop-blur-md px-6 py-2 rounded-full mb-6">
+                <i class="fas fa-shield-alt mr-2 text-yellow-400"></i>
+                <span class="text-sm">鴻賜資產管理有限公司｜合法登記・誠信保密</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                急需周轉？<br>利率最低 <span class="text-yellow-400">1%起</span>
+            </h1>
+            <p class="text-2xl md:text-3xl mb-8">借 30 萬 每天只需還 <span class="font-bold text-yellow-400">約 NT$170</span> 起！</p>
+            
+            <div class="flex flex-wrap justify-center gap-8 my-12 text-lg">
+                <div class="flex items-center gap-3"><i class="fas fa-check text-green-400"></i> 最快當日撥款</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-green-400"></i> 銀行拒絕也歡迎</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-green-400"></i> 無需繁瑣對保</div>
+            </div>
+
+            <button onclick="document.getElementById('form-section').scrollIntoView({behavior: 'smooth'})" 
+                    class="bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-xl md:text-2xl px-12 md:px-16 py-5 md:py-6 rounded-2xl shadow-xl transition-all w-full sm:w-auto">
+                立即申請貸款 → 免費評估額度
+            </button>
+            <p class="mt-6 text-sm opacity-90">已有 <span class="font-bold text-yellow-400">1,247</span> 人今日完成評估</p>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">為什麼選擇鴻賜資產管理？</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white border border-gray-100 p-8 rounded-3xl text-center shadow-sm">
+                    <i class="fas fa-percentage text-5xl text-green-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">超低利率</h3>
+                    <p class="text-3xl font-bold text-green-600">1%起</p>
+                    <p class="mt-4 text-gray-600 text-sm">遠低於一般信貸平均利率</p>
+                </div>
+                <div class="card-hover bg-white border border-gray-100 p-8 rounded-3xl text-center shadow-sm">
+                    <i class="fas fa-clock text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">快速撥款</h3>
+                    <p class="text-3xl font-bold text-blue-600">最快當日</p>
+                    <p class="mt-4 text-gray-600 text-sm">線上申請 + 專員協助</p>
+                </div>
+                <div class="card-hover bg-white border border-gray-100 p-8 rounded-3xl text-center shadow-sm">
+                    <i class="fas fa-users text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">彈性條件</h3>
+                    <p class="text-2xl font-bold text-purple-600">條件寬鬆</p>
+                    <p class="mt-4 text-gray-600 text-sm">自營、接案、家管、銀行拒絕皆可辦</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 計算器 / 範例區 -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">借多少？還多少？一目了然</h2>
+            <p class="text-gray-400 mb-10 max-w-xl mx-auto text-sm md:text-base">透明利息試算，還款超彈性（以下金額均以低利率方案5年期預估）</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
+                <div class="bg-gray-800 p-8 rounded-2xl flex flex-col justify-between border border-gray-700/50">
+                    <div>
+                        <span class="inline-block bg-gray-700 text-xs px-3 py-1 rounded-full text-gray-300 mb-3">微型週轉</span>
+                        <p class="text-xl font-medium text-gray-400">小額借 <span class="text-white font-bold text-2xl">10</span> 萬</p>
+                    </div>
+                    <div class="my-6">
+                        <p class="text-xs text-gray-400 mb-1">月還款約</p>
+                        <p class="text-3xl md:text-4xl font-extrabold text-green-400">NT$ 1,733</p>
+                    </div>
+                    <p class="text-xs text-gray-500">每天負擔不到一餐飯錢，無痛還款</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl flex flex-col justify-between border-2 border-yellow-400 relative shadow-2xl">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">熱門首選</div>
+                    <div>
+                        <span class="inline-block bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full mb-3">精選方案</span>
+                        <p class="text-xl font-medium text-gray-400">主力借 <span class="text-white font-bold text-2xl">30</span> 萬</p>
+                    </div>
+                    <div class="my-6">
+                        <p class="text-xs text-gray-400 mb-1">月還款約</p>
+                        <p class="text-4xl md:text-5xl font-extrabold text-yellow-400">NT$ 5,200</p>
+                    </div>
+                    <p class="text-xs text-yellow-400/80">每日利息僅約 $170 元起，壓力最低</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl flex flex-col justify-between border border-gray-700/50">
+                    <div>
+                        <span class="inline-block bg-gray-700 text-xs px-3 py-1 rounded-full text-gray-300 mb-3">大額融資</span>
+                        <p class="text-xl font-medium text-gray-400">大額借 <span class="text-white font-bold text-2xl">50</span> 萬</p>
+                    </div>
+                    <div class="my-6">
+                        <p class="text-xs text-gray-400 mb-1">月還款約</p>
+                        <p class="text-3xl md:text-4xl font-extrabold text-green-400">NT$ 8,665</p>
+                    </div>
+                    <p class="text-xs text-gray-500">適合中小企業、商戶大額擴張週轉</p>
+                </div>
+            </div>
+            <p class="mt-8 text-xs opacity-60">※ 以上試算結果僅供參考，實際還款金額與利率依個人申請條件核定。</p>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 2. 表單區塊（居住地區精簡至縣市） -->
+    <!-- ========================================== -->
+    <section id="form-section" class="py-20 bg-white">
+        <div class="max-w-2xl mx-auto px-6">
+            <div class="bg-white border border-gray-200 shadow-2xl rounded-3xl p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center mb-2">填寫資料，立即評估額度</h2>
+                <p class="text-center text-gray-600 mb-10">資料僅用作初審，全程受軍級個資安全系統保護</p>
+
+                <form id="loanForm" class="space-y-6">
+                    <!-- 基本聯絡資料 -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">姓名 *</label>
+                            <input type="text" name="name" required placeholder="請輸入姓名" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">手機號碼 *</label>
+                            <input type="tel" name="phone" required placeholder="09xxxxxxxx" pattern="^09[0-9]{8}$" title="請輸入正確的台灣手機格式，共10碼" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">LINE ID (方便聯繫)</label>
+                            <input type="text" name="lineId" placeholder="請輸入 LINE ID" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">身分證字號 *</label>
+                            <input type="text" name="id_card" required placeholder="第一個字母大寫共10碼" pattern="^[A-Z][12]\d{8}$" title="請輸入正確的中華民國身分證字號格式，例如 A123456789" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 uppercase">
+                        </div>
+                    </div>
+
+                    <!-- 台灣居住地區選擇 (僅到縣市) -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">台灣居住縣市 *</label>
+                        <select id="county" name="county" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 bg-white">
+                            <option value="">請選擇縣市</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">貸款金額需求 (萬) *</label>
+                            <select name="amount" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 bg-white">
+                                <option value="">請選擇</option>
+                                <option value="10萬">10萬</option>
+                                <option value="30萬">30萬</option>
+                                <option value="50萬">50萬</option>
+                                <option value="100萬以上">100萬以上</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">年齡 *</label>
+                            <input type="number" name="age" min="18" max="65" required placeholder="您的年齡" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500">
+                        </div>
+                    </div>
+
+                    <!-- 財務狀況甄選模組 -->
+                    <div class="space-y-4 pt-2">
+                        <label class="block text-base font-bold text-blue-900 border-b pb-2">基本財務狀況評估 *</label>
+                        
+                        <!-- 1. 警示戶 -->
+                        <div class="bg-gray-50 border border-gray-200 p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <span class="text-sm font-medium text-gray-700">1. 銀行是否為警示戶？</span>
+                            <div class="flex gap-3 w-full sm:w-auto">
+                                <label class="radio-btn border border-gray-300 bg-white text-center py-2 px-6 rounded-lg cursor-pointer flex-1 sm:flex-initial"><input type="radio" name="is_warning_account" value="是" required>是</label>
+                                <label class="radio-btn border border-gray-300 bg-white text-center py-2 px-6 rounded-lg cursor-pointer flex-1 sm:flex-initial"><input type="radio" name="is_warning_account" value="否" required>否</label>
+                            </div>
+                        </div>
+
+                        <!-- 2. 外幣帳戶 -->
+                        <div class="bg-gray-50 border border-gray-200 p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <span class="text-sm font-medium text-gray-700">2. 是否有個人外幣帳戶？</span>
+                            <div class="flex gap-3 w-full sm:w-auto">
+                                <label class="radio-btn border border-gray-300 bg-white text-center py-2 px-6 rounded-lg cursor-pointer flex-1 sm:flex-initial"><input type="radio" name="has_foreign_currency_acc" value="是" required>開過</label>
+                                <label class="radio-btn border border-gray-300 bg-white text-center py-2 px-6 rounded-lg cursor-pointer flex-1 sm:flex-initial"><input type="radio" name="has_foreign_currency_acc" value="否" required>沒開過</label>
+                            </div>
+                        </div>
+
+                        <!-- 3. 现有贷款 -->
+                        <div class="bg-gray-50 border border-gray-200 p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <span class="text-sm font-medium text-gray-700">3. 是否有信貸／房貸／汽貸／機貸？</span>
+                            <div class="flex gap-3 w-full sm:w-auto">
+                                <label class="radio-btn border border-gray-300 bg-white text-center py-2 px-6 rounded-lg cursor-pointer flex-1 sm:flex-initial"><input type="radio" name="has_other_loans" value="是" required>是</label>
+                                <label class="radio-btn border border-gray-300 bg-white text-center py-2 px-6 rounded-lg cursor-pointer flex-1 sm:flex-initial"><input type="radio" name="has_other_loans" value="否" required>否</label>
+                            </div>
+                        </div>
+
+                        <!-- 4. 银行呆账 -->
+                        <div class="bg-gray-50 border border-gray-200 p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <span class="text-sm font-medium text-gray-700">4. 銀行協商或呆帳？</span>
+                            <div class="flex gap-3 w-full sm:w-auto">
+                                <label class="radio-btn border border-gray-300 bg-white text-center py-2 px-6 rounded-lg cursor-pointer flex-1 sm:flex-initial"><input type="radio" name="has_bad_debt" value="是" required>是</label>
+                                <label class="radio-btn border border-gray-300 bg-white text-center py-2 px-6 rounded-lg cursor-pointer flex-1 sm:flex-initial"><input type="radio" name="has_bad_debt" value="否" required>否</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" required id="agree" class="mt-1 accent-blue-600">
+                        <label for="agree" class="text-sm text-gray-600 cursor-pointer">我同意提供資料予鴻賜資產管理處理，並接受本網站之安全隱私政策</label>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-xl py-5 rounded-2xl shadow-lg transition-all transform active:scale-[0.99]">
+                        送出申請 → 專員立即聯繫
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 信任區 -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-sm uppercase tracking-widest text-gray-500 font-semibold">合法多元金融管道 &amp; 隱私保密見證</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 mt-8 opacity-60 text-lg md:text-xl font-bold text-gray-700">
+                <div><i class="fas fa-university mr-1"></i> 台灣各大銀行</div>
+                <div><i class="fas fa-handshake mr-1"></i> 民間合法融資</div>
+                <div><i class="fas fa-shield-alt mr-1"></i> 100% 隱私保障</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 text-center text-sm px-6 border-t border-gray-800">
+        <p>鴻賜資產管理有限公司 © 2026 | 新北市永和區秀朗路2段98號3樓</p>
+        <p class="mt-2 text-gray-500">注意：年利率視個人信用與擔保品條件而定（約 2% - 16%）。還款期數可分 12 - 84 期。請理性評估自身還款能力。</p>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- 3. 前端表單與高階邏輯監聽 -->
+    <!-- ========================================== -->
+    <script>
+        const SUPABASE_URL = 'https://ijzywhrnhvldkjdwfdyy.supabase.co';
+        const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_6aY1-VEvimuV1K4FzURO2Q_inVt-ZKL';
+        let ENTERPRISE_LINE_URL = 'https://line.me/ti/p/@987apocu';
+        let ENTERPRISE_LINE_ID = '@987apocu';
+
+        function applyCPageConfig(config) {
+            config = config || {};
+            ENTERPRISE_LINE_URL = config.line_url || ENTERPRISE_LINE_URL;
+            ENTERPRISE_LINE_ID = config.line_id || ENTERPRISE_LINE_ID;
+            const companyName = config.company_name || '';
+            if (!companyName) return;
+            const oldNames = ['鴻賜資產管理有限公司', '鴻賜資產管理'];
+            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+            const nodes = [];
+            while (walker.nextNode()) nodes.push(walker.currentNode);
+            nodes.forEach(node => {
+                if (!node.parentElement || /^(SCRIPT|STYLE)$/.test(node.parentElement.tagName)) return;
+                oldNames.forEach(oldName => {
+                    node.nodeValue = node.nodeValue.split(oldName).join(companyName);
+                });
+            });
+            document.title = document.title.split('鴻賜資產管理').join(companyName);
+        }
+
+        Promise.resolve(window.PAGE_CONFIG_READY)
+            .then(applyCPageConfig)
+            .catch(error => console.warn('Page config load failed:', error))
+            .finally(() => document.documentElement.classList.remove('c-config-loading'));
+
+        function createLeadId() {
+            if (window.crypto && window.crypto.randomUUID) return window.crypto.randomUUID();
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+                const r = Math.random() * 16 | 0;
+                const v = c === 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        async function submitLeadPayload(payload) {
+            const requestOptions = {
+                method: 'POST',
+                headers: {
+                    apikey: SUPABASE_PUBLISHABLE_KEY,
+                    Authorization: 'Bearer ' + SUPABASE_PUBLISHABLE_KEY,
+                    'Content-Type': 'application/json',
+                    Prefer: 'return=minimal'
+                },
+                body: JSON.stringify(payload)
+            };
+            let response = await fetch(SUPABASE_URL + '/rest/v1/leads', requestOptions);
+            if (!response.ok && payload.traffic_source) {
+                const errorText = await response.clone().text();
+                if (errorText.includes('traffic_source')) {
+                    const fallbackPayload = { ...payload };
+                    delete fallbackPayload.traffic_source;
+                    requestOptions.body = JSON.stringify(fallbackPayload);
+                    response = await fetch(SUPABASE_URL + '/rest/v1/leads', requestOptions);
+                }
+            }
+            return response;
+        }
+
+        function trackLineClick() {
+            if (!window.__lastLeadId) return;
+            fetch(SUPABASE_URL + '/rest/v1/rpc/mark_line_clicked', {
+                method: 'POST',
+                keepalive: true,
+                headers: {
+                    apikey: SUPABASE_PUBLISHABLE_KEY,
+                    Authorization: 'Bearer ' + SUPABASE_PUBLISHABLE_KEY,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ lead_id: window.__lastLeadId })
+            }).catch(error => console.warn('Line click update error:', error));
+        }
+
+        // 台灣 22 縣市數據
+        const counties = [
+            "基隆市", "台北市", "新北市", "桃園市", "新竹市", "新竹縣", "苗栗縣", 
+            "台中市", "彰化縣", "南投縣", "雲林縣", "嘉義市", "嘉義縣", "台南市", 
+            "高雄市", "屏東縣", "宜蘭縣", "花蓮縣", "台東縣", "澎湖縣", "金門縣", "連江縣"
+        ];
+
+        // 初始化縣市下拉選單
+        const countySelect = document.getElementById('county');
+        counties.forEach(county => {
+            let opt = document.createElement('option');
+            opt.value = county;
+            opt.innerHTML = county;
+            countySelect.appendChild(opt);
+        });
+
+        // 處理 Radio 美化按鈕的點擊樣式切換
+        document.querySelectorAll('.radio-btn').forEach(label => {
+            label.addEventListener('click', function() {
+                const radioInput = this.querySelector('input[type="radio"]');
+                const groupName = radioInput.name;
+                
+                document.querySelectorAll(`input[name="${groupName}"]`).forEach(input => {
+                    input.parentNode.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+                radioInput.checked = true;
+            });
+        });
+
+        // 表單提交攔截
+        document.getElementById('loanForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            await Promise.resolve(window.PAGE_CONFIG_READY).catch(() => null);
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            const leadId = createLeadId();
+            const pageConfig = window.PAGE_CONFIG || {};
+            const payload = {
+                id: leadId,
+                page_id: pageConfig.id || null,
+                page_slug: window.PAGE_SLUG || 'main',
+                name: data.name || '',
+                age: data.age ? Number(data.age) : null,
+                city: data.county || '',
+                id_number: String(data.id_card || '').toUpperCase(),
+                phone: data.phone || '',
+                line_id: data.lineId || '',
+                q1_existing_loan: '是否有信貸／房貸／汽貸／機貸：' + (data.has_other_loans || '') + '；銀行協商或呆帳：' + (data.has_bad_debt || ''),
+                q2_bank_status: '銀行是否為警示戶：' + (data.is_warning_account || ''),
+                q3_amount_needed: data.amount || '',
+                q4_foreign_currency_account: '是否有個人外幣帳戶：' + (data.has_foreign_currency_acc || ''),
+                source_url: window.location.href,
+                traffic_source: window.TRAFFIC_SOURCE || null,
+                user_agent: navigator.userAgent,
+                status: 'new',
+                line_clicked: false
+            };
+            
+            try {
+                const response = await submitLeadPayload(payload);
+                if (!response.ok) throw new Error('Supabase insert failed: ' + response.status);
+                window.__lastLeadId = leadId;
+                window.trackPageEvent?.('Lead', {
+                    content_name: 'H版貸款申請',
+                    content_category: '貸款引流',
+                    value: 0,
+                    currency: 'TWD'
+                });
+                window.trackPageEvent?.('CompleteRegistration', {
+                    content_name: 'H版貸款申請',
+                    status: 'submitted'
+                });
+                window.trackTikTokEvent?.('SubmitForm', { content_type: 'loan_application' });
+                console.log("已攔截的完整表單數據：", data);
+                
+            } catch (error) {
+                console.error('保存發生錯誤:', error);
+            } finally {
+                trackLineClick();
+                window.location.href = ENTERPRISE_LINE_URL;
+            }
+        });
+    </script>
+</body>
+</html>
